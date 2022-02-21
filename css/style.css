@@ -3,3 +3,57 @@ body{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    margin-bottom: 80px;
+}
+
+.logo-link{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.nav-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu-item{
+    margin-right: 30px;
+}
+
+.nav-menu-link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.film-date{
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.film-description{
+    max-width: 423px;
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+}
