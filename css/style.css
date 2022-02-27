@@ -1,44 +1,43 @@
-body{
-    background: #14131A;
+body {
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 
-.container{
+.container {
     max-width: 1140px;
     margin: auto;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     padding-top: 40px;
     margin-bottom: 80px;
 }
 
-.logo-link{
+.logo-link {
     display: inline-block;
     margin-right: 50px;
 }
 
-.nav-menu{
+.nav-menu {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
 }
 
-.nav-menu-item{
+.nav-menu-item {
     margin-right: 30px;
 }
 
-.nav-menu-link{
+.nav-menu-link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
 }
 
 
-.film-date{
+.film-date {
     display: block;
     font-style: normal;
     font-weight: normal;
@@ -48,7 +47,7 @@ body{
     color: rgba(255, 255, 255, 0.8);
 }
 
-.film-description{
+.film-description {
     max-width: 423px;
     margin-top: 40px;
     font-style: normal;
@@ -56,4 +55,46 @@ body{
     font-size: 16px;
     line-height: 140%;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-text, .button-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.button-text {
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 10px;
+}
+
+.button-primary {
+    color: #8D0019;
+    background-color: white;
+}
+
+.button-link {
+    color: white;
+}
+
+.button-group {
+    margin-top: 70px;
+}
+
+.venom {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.blood{
+    background: url("../images/blood.png") no-repeat top right, #14131A url("../images/background.jpg") no-repeat center center;
 }
