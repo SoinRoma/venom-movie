@@ -3,6 +3,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .container {
     max-width: 1140px;
     margin: auto;
@@ -93,8 +97,108 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    height: 100vh;
 }
 
-.blood{
-    background: url("../images/blood.png") no-repeat top right, #14131A url("../images/background.jpg") no-repeat center center;
+.blood {
+    background: url("../images/blood.png") no-repeat top right, #14131A url("../images/background.jpg") no-repeat center center / 100%;
+}
+
+.about {
+    background: #14131A url("../images/background.jpg") no-repeat center center / 100%;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+.content-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+.content-text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 423px;
+    margin-bottom: 30px;
+}
+
+.content-subtitle{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.content .list{
+   list-style: none;
+    padding: 0;
+}
+
+.list-item{
+    line-height: 1.5;
+}
+
+.column-2{
+    column-count: 2;
+    column-gap:  20px;
+    max-width: 350px;
+}
+
+.trailer{
+    width: 356px;
+    height: 205px;
+    background: url("../images/trailer.png") no-repeat center / contain;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 33px;
+
+}
+
+.trailer .play{
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.poster-wrapper{
+    display: flex;
+    align-items: start;
+}
+
+.poster{
+    width: 362px;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.poster-wrapper .content-subtitle{
+    margin-bottom: 5px;
+}
+
+.poster-wrapper .content-text{
+    margin-bottom: 20px;
+}
+
+.poster-wrapper .list{
+    margin: 20px 0 0;
 }
