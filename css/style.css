@@ -3,20 +3,33 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+img{
+    max-width: 100%;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
 
 .container {
     max-width: 1140px;
+    width: 90%;
     margin: auto;
+}
+
+.venom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 728px;
+    width: 42%;
 }
 
 .header {
     display: flex;
     align-items: center;
     padding-top: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 4%;
 }
 
 .logo-link {
@@ -47,13 +60,17 @@ body::-webkit-scrollbar {
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    margin-bottom: 40px;
+    margin-bottom: 2%;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.film-logo{
+    width: 70%;
 }
 
 .film-description {
     max-width: 423px;
-    margin-top: 40px;
+    margin-top: 3%;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -90,18 +107,11 @@ body::-webkit-scrollbar {
 }
 
 .button-group {
-    margin-top: 70px;
-}
-
-.venom {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100vh;
+    margin-top: 5%;
 }
 
 .blood {
-    background: url("../images/blood.png") no-repeat top right, #14131A url("../images/background.jpg") no-repeat center center / 100%;
+    background: url("../images/blood.png") no-repeat top right / 70%, #14131A url("../images/background.jpg") no-repeat center center / 100%;
 }
 
 .about {
@@ -201,4 +211,89 @@ body::-webkit-scrollbar {
 
 .poster-wrapper .list{
     margin: 20px 0 0;
+}
+
+.menu-button{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .content{
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+    .col{
+        margin-bottom: 5%;
+    }
+
+    .film{
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .blood{
+        background: #14131A;
+    }
+
+    .venom{
+        top: 16%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .nav-menu{
+        display: none;
+    }
+
+    .nav{
+        margin-left: auto;
+    }
+
+    .menu-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        background: #14131A;
+        cursor: pointer;
+        color: white;
+    }
+
+    .menu-button-text{
+        margin-right: 10px;
+    }
+
+    .button-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .film-text{
+        text-align: center;
+    }
+
+    .poster-wrapper{
+        flex-direction: column;
+    }
+
+    .poster{
+        margin-bottom: 4%;
+        margin-right: 0;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .content .trailer{
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .column-2{
+        column-count: 1;
+    }
 }
