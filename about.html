@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Open+Sans:wght@300&family=Roboto:wght@400;700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="about">
@@ -22,6 +23,10 @@
             <button class="menu-button">
                 <span class="menu-button-text">Меню</span>
                 <img src="images/menu.svg" alt="menu" class="menu-button-icon">
+            </button>
+            <button class="menu-close">
+                <span class="menu-close-text">Закрыть</span>
+                <img src="images/back.svg" alt="back" class="menu-close-icon">
             </button>
             <ul class="nav-menu">
                 <li class="nav-menu-item">
@@ -61,9 +66,9 @@
                 <li class="list-item">Пегги Лу</li>
             </ul>
             <div class="trailer">
-                <button class="play">
+                <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0&ab_channel=SonyPicturesRU" class="play">
                     <img src="images/play-icon.svg" alt="play-icon" class="play-icon">
-                </button>
+                </a>
             </div>
         </div>
         <div class="col ">
@@ -91,6 +96,8 @@
     </div>
 </div>
 
+<script src="js/jquery.js"></script>
+<script src="js/fancybox/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
