@@ -217,6 +217,129 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.hide-form {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: -100vh;
+    right: 60px;
+    width: 320px;
+    max-height: 100vh;
+    overflow-y: auto;
+    -webkit-transition: bottom 0.5s linear;
+    -o-transition: bottom 0.5s linear;
+    transition: bottom 0.5s linear;
+}
+
+/* .hide-form-active {
+    bottom: 0 !important;
+} */
+.hide-form-active {
+    bottom: 0 !important;
+}
+
+.hide-form a {
+    color: inherit;
+    font-style: italic;
+}
+
+.order-trigger {
+    width: 150px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    background-color: #B30303;
+    color: #EFE8F4;
+    cursor: pointer;
+    padding: 0 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.order-trigger:hover {
+    background-color: #4081AF;
+}
+
+.order-ticket {
+    background-color: #14131a;
+    padding: 30px;
+
+}
+
+
+.order-ticket__form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+.order-ticket__description {
+    margin-bottom: 15px;
+}
+
+.order-ticket__label {
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+.order-ticket__label-text {
+    position: absolute;
+    padding: 0 5px;
+    left: 10px;
+    top: 15px;
+    background-color: #14131a;
+    transition: top 0.2s linear, border-color 0.5s linear;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.order-ticket__input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid #EFE8F4;
+    color: #EFE8F4;
+}
+
+
+.order-ticket__label-focus .order-ticket__label-text,
+.order-ticket__input:focus+.order-ticket__label-text,
+.order-ticket__input:active+.order-ticket__label-text {
+    top: 0;
+    border-color: #4081AF
+}
+
+.order-ticket__label-focus .order-ticket__input,
+.order-ticket__input:active,
+.order-ticket__input:focus {
+    border-color: #4081AF;
+    outline: none;
+}
+
+.order-ticket__preloader-wrapper {
+    display: none;
+}
+
+.order-ticket__thanks-wrapper {
+    display: none;
+}
+
+video{
+    width: 90%;
+}
 
 @media (max-width: 1024px) {
     .content {
@@ -245,6 +368,15 @@ body::-webkit-scrollbar {
 
 
 @media (max-width: 576px) {
+
+    .hide-form {
+        right: 0;
+        width: 100vw;
+    }
+
+    .order-trigger {
+        margin: 0 auto;
+    }
 
     .nav-menu {
         position: fixed;
