@@ -35,8 +35,8 @@ setTimeout(() => {
 // Отправка данных
 const sendData = (data, callback, callBefore) => {
     if (callBefore) callBefore();
-    // fetch("https://jsonplaceholder.typicode.com/posts", { // Фейковый сервер
-    fetch("http://localhost:3000/api", {
+    fetch("https://jsonplaceholder.typicode.com/posts", { // Фейковый сервер
+    //fetch("http://localhost:3000/api", {
         method: "POST",
         headers: {
             "Content-type": "application/json; charset=UTF-8",
