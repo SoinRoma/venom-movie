@@ -15,10 +15,6 @@ fancybox для просмотра трейлера. Также есть вид�
 ![JQuery](https://img.shields.io/badge/-JQuery-black?style=flat-square&logo=jquery&logoColor=jquery)
 ![FancyBox](https://img.shields.io/badge/-FancyBox-black?style=flat-square&logo=fancybox&logoColor=fancybox)
 
-### Запуск проекта
-```
-Разархивировать проект и запустить в IDE
-```
 ### Для запуска своего сервера нужно:
 
 1 - Перейти в консоли в папку venom-backend
